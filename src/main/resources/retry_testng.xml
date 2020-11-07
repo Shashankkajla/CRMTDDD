@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FreeCRMTestSuite" verbose="1">
+
+   <listeners>
+   <listener class-name="com.analyzer.MyTransformer"/>
+   
+   </listeners>
+   
+   
+   <test name="RetryMultipleFailedTestCases">
+   <classes>
+   <class name="com.crm.qa.testcases.LoginPageTest" />  
+   <class name="com.crm.qa.testcases.ContactsPageTest" />
+   </classes>
+   </test>
+   </suite> 
+   
+<!--     if you want to execute all class with retry logic so class name = "packagename.*" now that -->
+<!--    will be applicable for all the classes   i.e, retry logic  -->
+   

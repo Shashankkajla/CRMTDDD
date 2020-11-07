@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Free CRM Test Automation Test Suite">
+
+ <!-- <Add listener tag to run extent report it will listen each & every thing, after suite 
+& before test tag have to rite Listener tag>
+  -->
+   <listeners>
+    <listener class-name= "com.qa.ExtentReportListener.ExtentReporterNG" />
+    <listener class-name="com.analyzer.TestJiraListener" />   
+  </listeners>
+ 
+   
+ 
+<test name= "Free CRM Application Test" >
+
+ <classes>
+     <class name="com.crm.qa.testcases.LoginPageTest" />
+     <class name="com.crm.qa.testcases.HomePageTest"></class>
+     <class name="com.crm.qa.testcases.ContactsPageTest"></class>   
+     <class name="com.crm.qa.testcases.TasksPageTest"></class> 
+     <class name="com.crm.qa.testcases.DealsPageTest"></class>   
+        
+     </classes>
+
+    </test> 
+    </suite>
